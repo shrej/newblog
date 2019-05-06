@@ -7,7 +7,6 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import PostNav from '../components/post-nav';
-import TagsList from '../components/tags-list';
 import CodeStyle from '../emotion/code';
 import pageContextShape from '../shapes/page-context';
 import postShape from '../shapes/post';
@@ -108,7 +107,6 @@ const BlogPost = ({ data, pageContext }) => {
             >
               {dateformat(post.frontmatter.date, 'mmmm d, yyyy')}
             </HeaderDate>
-            <TagsList tags={post.frontmatter.tags} />
           </Header>
           <PostWrap dangerouslySetInnerHTML={{ __html: post.html }} />
         </article>
