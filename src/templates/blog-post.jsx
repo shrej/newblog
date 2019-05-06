@@ -4,7 +4,6 @@ import dateformat from 'dateformat';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import ReactDisqusComments from 'react-disqus-comments';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import PostNav from '../components/post-nav';
@@ -112,16 +111,6 @@ const BlogPost = ({ data, pageContext }) => {
             <TagsList tags={post.frontmatter.tags} />
           </Header>
           <PostWrap dangerouslySetInnerHTML={{ __html: post.html }} />
-          <Footer>
-            {isProduction && (
-              <ReactDisqusComments
-                shortname="kenpowers"
-                identifier={post.frontmatter.path}
-                title={post.frontmatter.title}
-                url={fullUrl}
-              />
-            )}
-          </Footer>
         </article>
         <PostNavWrap>
           <PostNav prev post={prev} />
