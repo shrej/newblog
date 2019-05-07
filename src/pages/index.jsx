@@ -54,10 +54,12 @@ const About = ({
       </Helmet>
       <H2>About me</H2>
       <P>
+        Hi!
         My name is Shreyans, and I am a senior Software Engineer at Salesforce.
         In past, I worked at Gallup,Inc. and Virtual Environment and Multimodal
         interaction lab at The University of Maine. Feel free to have a look at
-        my graduate research or some of my personal projects.
+        some of my open source projects.
+        Stay tuned for more content as I migrate my old website to the new one :)
       </P>
     </main>
   </Layout>
