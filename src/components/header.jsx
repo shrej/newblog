@@ -48,7 +48,7 @@ const SiteHeader = () => (
     </H1>
     <Nav>
       <Link to="/">About</Link>
-      <Link to="/blog">Blog</Link>
+      {/* <Link to="/blog">Blog</Link> */}
       <A href="https://github.com/shrej" target="_blank">
         GitHub
       </A>
