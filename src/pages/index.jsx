@@ -5,21 +5,13 @@ import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import siteShape from '../shapes/site';
 
-const maLink = (
-  <a href="https://www.youtube.com/watch?v=JvUMV1N7eGM">Massachusetts</a>
+const salesforce = (
+  <a href="https://www.salesforce.com" target="_blank">Salesforce</a>
 );
-const ghLink = <a href="https://github.com/knpwrs">my GitHub</a>;
-const patsLink = <a href="http://www.patriots.com/">New England Patriots</a>;
+const gallup = <a href="https://gallup.com" target="_blank">Gallup</a>;
+const vemiLab = <a href="https://umaine.edu/vemi/" target="_blank">Virtual Environment and Multimodal interaction lab</a>;
+const github = <a href="https://github.com/shrej" target="_blank">Personal projects.</a>
 
-const ResumeHeader = styled.header(({ theme }) => ({
-  ...theme.centerPadding,
-  display: 'flex',
-  flexDirection: 'row',
-  justifyContent: 'space-between',
-  '> h5': {
-    margin: 0
-  }
-}));
 
 const H2 = styled.h2(({ theme }) => ({
   ...theme.centerPadding,
@@ -34,7 +26,9 @@ const H4 = styled.h4(({ theme }) => ({
   marginBottom: theme.spacing
 }));
 const P = styled.p(({ theme }) => ({
-  ...theme.centerPadding
+  ...theme.centerPadding,
+  fontSize: '1.5rem',
+  lineHeight: '3rem'
 }));
 const Ul = styled.ul(({ theme }) => ({
   ...theme.centerPadding,
@@ -55,11 +49,9 @@ const About = ({
       <H2>About me</H2>
       <P>
         Hi!
-        My name is Shreyans, and I am a senior Software Engineer at Salesforce.
-        In past, I worked at Gallup,Inc. and Virtual Environment and Multimodal
-        interaction lab at The University of Maine. Feel free to have a look at
-        some of my open source projects.
-        Stay tuned for more content as I migrate my old website to the new one :)
+        My name is Shreyans, and I am a senior Software Engineer at {salesforce}.
+        In past, I worked at {gallup} and the {vemiLab} at The University of Maine. Feel free to have a look at
+        some of my {github} Stay tuned for more content as I migrate my old website to the new one :)
       </P>
     </main>
   </Layout>
