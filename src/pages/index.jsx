@@ -51,7 +51,7 @@ const About = ({
         Hi!
         My name is Shreyans, and I am a senior Software Engineer at {salesforce}.
         In past, I worked at {gallup} and the {vemiLab} at The University of Maine. Feel free to have a look at
-        some of my {github} Stay tuned for more content as I migrate my old website to the new one :)
+        some of my {github} Stay tuned for more content as I migrate my old website to the new one..
       </P>
     </main>
   </Layout>
