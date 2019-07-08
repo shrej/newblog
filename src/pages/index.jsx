@@ -4,6 +4,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import siteShape from '../shapes/site';
+import profilePhoto from '../images/shreyans-profile.jpg';
 
 const salesforce = (
   <a href="https://www.salesforce.com" target="_blank">Salesforce</a>
@@ -27,14 +28,22 @@ const H4 = styled.h4(({ theme }) => ({
 }));
 const P = styled.p(({ theme }) => ({
   ...theme.centerPadding,
-  fontSize: '1.5rem',
-  lineHeight: '3rem'
+  fontSize: '1.2rem',
+  lineHeight: '2.8rem'
 }));
 const Ul = styled.ul(({ theme }) => ({
   ...theme.centerPadding,
   marginBottom: theme.spacing,
   marginLeft: `${theme.spacingPx * 4}px`
 }));
+const Container = styled.div`
+`;
+const ProfilePic = styled.img`
+  display: block;
+  margin: auto;
+  max-height: 300px;
+`;
+
 
 const About = ({
   data: {
@@ -46,13 +55,14 @@ const About = ({
       <Helmet>
         <title>About &middot; {site.title}</title>
       </Helmet>
-      <H2>About me</H2>
+      <Container>
+          <ProfilePic src={profilePhoto} alt="shreyans jain in San Diego"/>
       <P>
-        Hi!
-        My name is Shreyans, and I am a senior Software Engineer at {salesforce}.
+        I am a senior Software Engineer at {salesforce}.
         In past, I worked at {gallup} and the {vemiLab} at The University of Maine. Feel free to have a look at
-        some of my {github} Stay tuned for more content as I migrate my old website to the new one..
+        some of my {github}
       </P>
+      </Container>
     </main>
   </Layout>
 );

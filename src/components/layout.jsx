@@ -54,7 +54,6 @@ const Layout = ({ children }) => (
         },
         a: {
           textDecoration: 'none',
-          fontStyle: 'italic',
           color: accentColor,
           transition: 'color 250ms linear',
           ':hover': {
