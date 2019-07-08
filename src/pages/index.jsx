@@ -5,13 +5,14 @@ import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import siteShape from '../shapes/site';
 import profilePhoto from '../images/shreyans-profile.jpg';
+import { graphql } from 'gatsby';
 
 const salesforce = (
   <a href="https://www.salesforce.com" target="_blank">Salesforce</a>
 );
 const gallup = <a href="https://gallup.com" target="_blank">Gallup</a>;
-const vemiLab = <a href="https://umaine.edu/vemi/" target="_blank">Virtual Environment and Multimodal interaction lab</a>;
-const github = <a href="https://github.com/shrej" target="_blank">Personal projects.</a>
+const vemiLab = <a href="https://umaine.edu/vemi/" target="_blank">Virtual Environment and Multimodal Interaction Lab (VEMI Lab)</a>;
+const github = <a href="https://github.com/shrej" target="_blank">personal projects.</a>
 
 
 const H2 = styled.h2(({ theme }) => ({
@@ -43,8 +44,6 @@ const ProfilePic = styled.img`
   margin: auto;
   max-height: 300px;
 `;
-
-
 const About = ({
   data: {
     site: { siteMetadata: site }
