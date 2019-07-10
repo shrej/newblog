@@ -4,7 +4,7 @@ import React from 'react';
 const Footer = styled.footer(({ theme }) => ({
   color: theme.textColor,
   height: theme.headerHeight,
-  textTransform: 'uppercase',
+  textTransform: 'capitalize',
   textAlign: 'center',
   opacity: 0.35,
   display: 'flex',

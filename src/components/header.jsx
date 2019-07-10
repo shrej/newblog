@@ -35,7 +35,7 @@ const Nav = styled.nav(({ theme }) => ({
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'space-between',
-  textTransform: 'uppercase',
+  textTransform: 'capitalize',
   a: {
     marginLeft: theme.spacing
   }

@@ -30,7 +30,9 @@ const H4 = styled.h4(({ theme }) => ({
 const P = styled.p(({ theme }) => ({
   ...theme.centerPadding,
   fontSize: '1.2rem',
-  lineHeight: '2.8rem'
+  lineHeight: '2.5rem',
+  fontFamily: 'Lato',
+  fontWeight: '300'
 }));
 const Ul = styled.ul(({ theme }) => ({
   ...theme.centerPadding,

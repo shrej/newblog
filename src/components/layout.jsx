@@ -46,10 +46,10 @@ const Layout = ({ children }) => (
           height: '100vh',
           margin: 0,
           padding: 0,
-          fontFamily: 'Lato'
+          fontFamily: 'Lato Medium'
         },
         'h1,h2,h3,h4': {
-          textTransform: 'uppercase',
+          textTransform: 'capitalize',
           marginBottom: 0
         },
         a: {
