@@ -55,9 +55,9 @@ const About = ({
         <title>About &middot; {site.title}</title>
       </Helmet>
       <Container>
-          <ProfilePic src={profilePhoto} alt="shreyans jain in San Diego"/>
+          <ProfilePic src={profilePhoto} alt="Me(Shrey) at the Golden Gate Bridge in San Francisco."/>
       <P>
-        I am a senior Software Engineer at {salesforce}.
+        Hello! I am a senior software engineer at {salesforce}.
         In past, I worked at {gallup} and the {vemiLab} at The University of Maine. Feel free to have a look at
         some of my {github}
       </P>
