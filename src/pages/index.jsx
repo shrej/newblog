@@ -8,12 +8,43 @@ import profilePhoto from '../images/shreyans-profile.jpg';
 import { graphql } from 'gatsby';
 
 const salesforce = (
-  <a href="https://www.salesforce.com" target="_blank">Salesforce</a>
+  <a href="https://www.salesforce.com" target="_blank">
+    Salesforce
+  </a>
 );
-const gallup = <a href="https://gallup.com" target="_blank">Gallup</a>;
-const vemiLab = <a href="https://umaine.edu/vemi/" target="_blank">Virtual Environment and Multimodal Interaction Lab (VEMI Lab)</a>;
-const github = <a href="https://github.com/shrej" target="_blank">personal projects.</a>
-
+const gallup = (
+  <a href="https://gallup.com" target="_blank">
+    Gallup
+  </a>
+);
+const vemiLab = (
+  <a href="https://umaine.edu/vemi/" target="_blank">
+    Virtual Environment and Multimodal Interaction Lab (VEMI Lab)
+  </a>
+);
+const github = (
+  <a href="https://github.com/shrej" target="_blank">
+    personal projects
+  </a>
+);
+const recentTalk = (
+  <a href="https://www.youtube.com/watch?v=-pXX70Ksi5g" target="_blank">
+    recent
+  </a>
+);
+const conferenceTalk = (
+  <a href="https://www.youtube.com/watch?v=TXTsjpevvKE" target="_blank">
+    talks
+  </a>
+);
+const graduateResearch = (
+  <a
+    href="https://scholar.google.com/citations?user=FFK-TwkAAAAJ&hl=en"
+    target="_blank"
+  >
+    graduate research
+  </a>
+);
 
 const H2 = styled.h2(({ theme }) => ({
   ...theme.centerPadding,
@@ -39,8 +70,7 @@ const Ul = styled.ul(({ theme }) => ({
   marginBottom: theme.spacing,
   marginLeft: `${theme.spacingPx * 4}px`
 }));
-const Container = styled.div`
-`;
+const Container = styled.div``;
 const ProfilePic = styled.img`
   display: block;
   margin: auto;
@@ -57,12 +87,21 @@ const About = ({
         <title>About &middot; {site.title}</title>
       </Helmet>
       <Container>
-          <ProfilePic src={profilePhoto} alt="Me(Shrey) at the Golden Gate Bridge in San Francisco."/>
-      <P>
-        Hello! I am a senior software engineer at {salesforce}.
-        In past, I worked at {gallup} and the {vemiLab} at The University of Maine. Feel free to have a look at
-        some of my {github}
-      </P>
+        <ProfilePic
+          src={profilePhoto}
+          alt="Me(Shrey) at the Golden Gate Bridge in San Francisco."
+        />
+        <P>
+          Hello! I am a senior software engineer at {salesforce}. In past, I
+          worked at {gallup} and the {vemiLab} at The University of Maine. I
+          have a keen interest in developing <i>useful, </i>
+          <i>usable, </i> and <i>delightful </i> user interfaces.
+        </P>
+        <P>
+          Feel free to have a look at some of my {github}, learn more about my{' '}
+          {graduateResearch}, or watch some of my {recentTalk} confrence{' '}
+          {conferenceTalk}.
+        </P>
       </Container>
     </main>
   </Layout>

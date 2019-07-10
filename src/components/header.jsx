@@ -52,6 +52,9 @@ const SiteHeader = () => (
       <A href="https://github.com/shrej" target="_blank">
         GitHub
       </A>
+      <A href="https://www.linkedin.com/in/jainshreyans/" target="_blank">
+        LinkedIn
+      </A>
       <A href="https://twitter.com/shreyans2" target="_blank">
         Twitter
       </A>
